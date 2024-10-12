@@ -1,30 +1,66 @@
-# 2D Heat Conduction Problem - ANSYS Simulation
+Geometry: A rectangular domain with width 
+𝑊
+W and height 
+𝐻
+=
+2
+𝑊
+H=2W.
 
-## Overview
+Boundary Conditions:
 
-This repository contains an ANSYS Workbench simulation solving a steady-state 2D heat conduction problem with mixed boundary conditions. The simulation focuses on determining the **dimensionless temperature distribution** and **heat flux** in a rectangular domain subjected to different thermal boundary conditions.
-
-## Problem Description
-
-- **Geometry**: A rectangular domain with width \( W \) and height \( H = 2W \).
-- **Boundary Conditions**:
-  - Bottom wall: Isothermal boundary \( \theta = 1 \) (constant temperature).
-  - Top and left walls: Adiabatic boundary \( \frac{\partial \theta}{\partial y} = 0 \) and \( \frac{\partial \theta}{\partial x} = 0 \), respectively (no heat flux).
-  - Right wall: Convective boundary \( -\frac{\partial \theta}{\partial x} = \text{Bi} \theta \), with a **Biot number** \( \text{Bi} = 5 \).
-- **Aspect Ratio**: \( H/W = 2 \).
-- **Solver**: Steady-state thermal analysis in ANSYS Mechanical.
-- **Objective**: To compute the dimensionless temperature distribution and heat flux.
-
-## Repository Structure
-
-```plaintext
+Bottom wall: Isothermal boundary 
+𝜃
+=
+1
+θ=1 (constant temperature).
+Top and left walls: Adiabatic boundary 
+∂
+𝜃
+∂
+𝑦
+=
+0
+∂y
+∂θ
+​
+ =0 and 
+∂
+𝜃
+∂
+𝑥
+=
+0
+∂x
+∂θ
+​
+ =0, respectively (no heat flux).
+Right wall: Convective boundary 
+−
+∂
+𝜃
+∂
+𝑥
+=
+Bi
+𝜃
+− 
+∂x
+∂θ
+​
+ =Biθ, with a Biot number 
+Bi
+=
+5
+Bi=5.
+Aspect Ratio: 
+𝐻
 /
-|-- geometry/          # Contains CAD files (if any)
-|-- meshes/            # Contains mesh files or settings
-|-- results/           # Stores screenshots or plots of the results
-|-- macros/            # Any ANSYS macros used for automation
-|-- project_files/     # ANSYS project files (e.g., .wbpj, .agdb, etc.)
-|-- docs/              # Documentation, screenshots, or relevant papers
-|-- .gitignore         # Specifies which files to ignore in version control
-|-- LICENSE            # License under which this project is distributed
-|-- README.md          # This project overview and setup instructions
+𝑊
+=
+2
+H/W=2.
+
+Solver: Steady-state thermal analysis in ANSYS Mechanical.
+
+Objective: To compute the dimensionless temperature distribution and heat flux.
