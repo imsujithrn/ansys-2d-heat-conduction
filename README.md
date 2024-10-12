@@ -21,9 +21,10 @@ This repository contains an ANSYS Workbench simulation for solving a steady-stat
 ## Repository Structure
 ```plaintext
 /
+|-- geometry/          # Contains CAD files (if any)
+|-- meshes/            # Contains mesh files or settings
 |-- results/           # Stores screenshots or plots of the results
 |-- project_files/     # ANSYS project files (e.g., .wbpj, .agdb, etc.)
-|-- docs/              # Documentation, screenshots, or relevant papers
 |-- .gitignore         # Specifies which files to ignore in version control
 |-- LICENSE            # License under which this project is distributed
 |-- README.md          # This project overview and setup instructions
