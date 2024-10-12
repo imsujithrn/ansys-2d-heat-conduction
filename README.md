@@ -5,14 +5,47 @@ This repository contains an ANSYS Workbench simulation for solving a steady-stat
 
 ## Problem Description
 
-**Geometry:** A rectangular domain with width \( W \) and height \( H = 2W \).
+**Geometry:** A rectangular domain with  width 
+𝑊
+W and height 
+𝐻
+=
+2
+𝑊
+H=2W.
 
 **Boundary Conditions:**
 - **Bottom Wall:** Isothermal boundary \( \theta = 1 \) (constant temperature).
-- **Top and Left Walls:** Adiabatic boundary conditions \( \frac{\partial \theta}{\partial y} = 0 \) and \( \frac{\partial \theta}{\partial x} = 0 \) (no heat flux).
-- **Right Wall:** Convective boundary condition \( -\frac{\partial \theta}{\partial x} = \text{Bi} \theta \), with a Biot number \( \text{Bi} = 5 \).
-
-**Aspect Ratio:** \( H/W = 2 \).
+- **Top and Left Walls:** Adiabatic boundary conditions ∂
+𝜃
+∂
+𝑦
+=
+0
+∂y
+∂θ
+​
+  = 0  and  
+∂
+𝜃
+∂
+𝑥
+=
+0
+∂x
+∂θ
+​
+ = 0  (no heat flux).
+- **Right Wall:** Convective boundary condition − 
+∂x
+∂θ
+​
+ =Biθ, with a Biot number 
+Bi
+=
+5
+Bi=5.
+**Aspect Ratio:** **H/W**=2.
 
 **Solver:** Steady-state thermal analysis in ANSYS Mechanical.
 
