@@ -10,7 +10,7 @@ This repository contains an ANSYS Workbench simulation for solving a steady-stat
 **Boundary Conditions:**
 - **Bottom Wall:** Isothermal boundary **θ=1** (constant temperature).
 - **Top and Left Walls:** Adiabatic boundary conditions **∂θ/∂y = 0** and  **∂𝜃/∂𝑥=0**   (no heat flux).
-- **Right Wall:** Convective boundary condition **− ∂x∂θ=Biθ**, with a Biot number **Bi=5**.
+- **Right Wall:** Convective boundary condition **− ∂x/∂θ=Biθ**, with a Biot number **Bi=5**.
 
 **Aspect Ratio:** **H/W**=2.
 
@@ -21,10 +21,7 @@ This repository contains an ANSYS Workbench simulation for solving a steady-stat
 ## Repository Structure
 ```plaintext
 /
-|-- geometry/          # Contains CAD files (if any)
-|-- meshes/            # Contains mesh files or settings
 |-- results/           # Stores screenshots or plots of the results
-|-- macros/            # Any ANSYS macros used for automation
 |-- project_files/     # ANSYS project files (e.g., .wbpj, .agdb, etc.)
 |-- docs/              # Documentation, screenshots, or relevant papers
 |-- .gitignore         # Specifies which files to ignore in version control
