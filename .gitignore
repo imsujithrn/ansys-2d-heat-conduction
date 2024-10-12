@@ -1,0 +1,32 @@
+# ANSYS files to ignore
+
+# Binary project and analysis files
+*.wbpj
+*.wbpjbkp
+*.dsdb
+*.agdb
+*.apdl
+*.rmg
+*.rst
+*.rth
+*.dat
+*.err
+*.ldhi
+*.tmp
+*.log
+
+# Journal files
+*.jou
+
+# Solution files
+*.emat
+*.esav
+*.osav
+*.db
+
+# Miscellaneous files
+*.lock
+*.inp
+*.txt
+*.cdb
+*.mac
